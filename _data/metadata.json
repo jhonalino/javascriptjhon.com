@@ -1,15 +1,15 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "javascriptjhon",
+  "url": "http://javascriptjhon.com/",
+  "description": "Javascript things with JavascriptJhon!",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Javascript things with JavascriptJhon!",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "http://javascriptjhon.com/"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Jhon Alino",
+    "email": "hello@jhonalino.com"
   }
 }
