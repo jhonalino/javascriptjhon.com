@@ -97,4 +97,4 @@ use `element.classList.add()` and `element.classList.remove()` to add or remove 
 
 
 ## That's it!
-there's a lot more to vanilla JS but these 5 steps will get your started with your interactive web app without react.
+there's a lot more to vanilla JS but these 5 steps will get you started with your interactive web app without react.
