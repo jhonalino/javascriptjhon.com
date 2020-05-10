@@ -1,6 +1,6 @@
 ---
-title: Get your Javascript Web App started without React
-description: How to write a javascript web app without react
+title: Get Your Javascript Web App Started Without React
+description: How to Write a Javascript Web App Without React
 tags:
   - vanilla JS
 layout: layouts/post.njk
