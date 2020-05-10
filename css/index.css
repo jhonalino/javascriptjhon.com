@@ -3,7 +3,7 @@
   --lightgray: #e0e0e0;
   --gray: #1d2b38;
   --darkgray: #15202b;
-  --navy: #17050F;
+  --pink: deeppink;
   --blue: #082840;
   --white: #fff;
 }
@@ -32,11 +32,11 @@ p,
 }
 
 a[href] {
-  color: var(--blue);
+  color: var(--white);
 }
 
 a[href]:visited {
-  color: var(--navy);
+  color: var(--pink);
 }
 
 main {
