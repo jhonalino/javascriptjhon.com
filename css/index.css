@@ -193,7 +193,7 @@ pre[class*="language-"] {
 .postlist-item:before {
   font-size: 0.8125em;
   /* 13px /16 */
-  color: var(--darkgray);
+  color: var(--white);
 }
 
 .postlist-date {

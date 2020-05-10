@@ -7,7 +7,7 @@ layout: layouts/post.njk
 ---
 
 If you're used to writing javascript with frameworks, writing with vanilla javascript can be intimidating. But it doesn't have to be that way! it can be a lot quicker to get started especially without all the tooling and configuration bloat that usually comes with a framework. All you need is an HTML file, a script tag and 5 simple steps
-
+---
 ```
 <!DOCTYPE html>
 <html lang="en">
