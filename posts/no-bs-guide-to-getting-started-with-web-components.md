@@ -1,6 +1,7 @@
 ---
 title: No BS Guide to Getting Started With Web Components
 description: No BS Guide to Getting Started With Web Components
+date: 2020-05-10
 tags:
   - vanilla js
   - web components
