@@ -178,7 +178,8 @@ pre[class*="language-"] {
 
 
 /* Tags */
-.tag {
+
+.tag:not(.token) {
   display: inline-block;
   vertical-align: text-top;
   text-transform: uppercase;
@@ -281,4 +282,28 @@ header {
 .postlist-item:hover {
   background: var(--darkgraylight);
   cursor: pointer;
+}
+
+
+.author {
+  margin-top: 10em;
+}
+
+.author a{
+  position: relative;
+}
+
+.author a span{
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  color: white;
+  display: block;
+  background: #c5004a;
+  width: 100%;
+
+}
+
+.author img {
+  width: 100%;
 }

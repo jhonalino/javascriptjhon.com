@@ -5,11 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="theme-color" content="#15202b">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-
+    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
+    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
+    <meta property="og:image" content="/img/javascriptjhon.jpg">
+    <meta property="og:url" content="{{ page.url }}">
+    <meta name="twitter:card" content="summary_large_image">
   </head>
   <body>
     {% include "gtm-no-js.njk" %}
@@ -26,8 +35,14 @@
 
         {{ content | safe }}
 
+        <div class="author">
+          <a href="https://jhonalino.com">
+            <img src="/img/javascriptjhon.jpg"/>
+            <span>jhonalino.com</span>
+          </a>
+        </div>
+
       </main>
     </div>
-
   </body>
 </html>
