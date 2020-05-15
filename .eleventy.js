@@ -75,7 +75,9 @@ module.exports = function(eleventyConfig) {
       "liquid",
       "png",
       "ico",
-      "webmanifest"
+      "webmanifest",
+      "mp3",
+      "jpg"
     ],
 
     // If your site lives in a different subdirectory, change this.
