@@ -2,99 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>record-player-js</title>
-    <style>
-        body {
-            height: 100vh;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            background: #15202b
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>record-player-js</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      background: #15202b
+    }
 
-        .record-player-disc:hover {
-            cursor: pointer;
-        }
+    .record-player-disc:hover {
+      cursor: pointer;
+    }
 
-        .record-player-disc {
-            width: 550px;
-            height: 550px;
-            border-radius: 50%;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            border: 1px solid #000000;
-            background-image: url('./img.jpg');
-            position: relative;
-            animation: rotate 20s infinite linear;
-            animation-play-state: paused;
-            filter: grayscale(1);
-        }
+    .record-player-disc {
+      width: 550px;
+      height: 550px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: 1px solid #000000;
+      background-image: url('./img.jpg');
+      position: relative;
+      animation: rotate 20s infinite linear;
+      animation-play-state: paused;
+      filter: grayscale(1);
+    }
 
-        .record-player-disc.playing {
-            animation: rotate 20s infinite linear;
-            filter: grayscale(0);
-        }
+    .record-player-disc.playing {
+      animation: rotate 20s infinite linear;
+      filter: grayscale(0);
+    }
 
-        @keyframes rotate {
-            100% {
-                transform: rotateZ(360deg);
-            }
-        }
+    @keyframes rotate {
+      100% {
+        transform: rotateZ(360deg);
+      }
+    }
 
-        .record-player-disc .hole {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #15202b;
-            border: 1px solid black;
-            box-shadow: inset 1px 1px 6px #000000;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+    .record-player-disc .hole {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #15202b;
+      border: 1px solid black;
+      box-shadow: inset 1px 1px 6px #000000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  </style>
 </head>
 
 <body>
 
-    <div class="record-player-disc">
-        <div class="hole"></div>
-    </div>
+  <div class="record-player-disc">
+    <div class="hole"></div>
+  </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", initialize);
+  <script>
+    const audio = new Audio("./music.mp3");
 
-        const audio = new Audio("./music.mp3");
+    let disc, img;
 
-        let disc, img;
+    document.addEventListener("DOMContentLoaded", initialize);
 
-        function initialize() {
-            disc = document.querySelector(".record-player-disc ");
-            addEventHandlers();
-        }
+    function initialize() {
+      disc = document.querySelector(".record-player-disc ");
+      disc.addEventListener("click", togglePlayback);
+    }
 
-        function addEventHandlers() {
-            disc.addEventListener("click", togglePlayback);
-        }
+    function addEventHandlers() {
 
-        function togglePlayback() {
-            if (audio.paused) {
-                disc.classList.add("playing");
-                audio.play();
-            } else {
-                disc.classList.remove("playing");
-                audio.pause();
-            }
-        }
-    </script>
+    }
 
+    function togglePlayback() {
+      if (audio.paused) {
+        disc.classList.add("playing");
+        audio.play();
+      } else {
+        disc.classList.remove("playing");
+        audio.pause();
+      }
+    }
 
-    <a style="color: #fff;" href="https://www.toneden.io/inova-1/post/the-vibe">music link</a>
+  </script>
 </body>
 
 </html>
