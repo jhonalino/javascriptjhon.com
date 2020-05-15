@@ -7,7 +7,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-If you're used to writing javascript with frameworks, writing with vanilla javascript can be intimidating. But it doesn't have to be that way! it can be a lot quicker to get started especially without all the tooling and configuration bloat that usually comes with a framework. All you need is an HTML file, a script tag and 5 simple steps
+If you’re used to writing JavaScript (JS) with frameworks, then writing with vanilla JavaScript can be intimidating; however, it doesn’t have to be that way! It can actually be a lot quicker to get an app started, especially without using all the extra tooling and configurations that usually come with frameworks. All you need is an HTML file, a script tag, and 5 simple steps.
 
 ```html
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ If you're used to writing javascript with frameworks, writing with vanilla javas
 
 ### 1. Wait for the DOM to be ready with DOMContentLoaded
 
-Most scripts interact with a DOM one way or another. For example changing some text when the user clicks a button or attaching click handlers. But before we can interact with the DOM, it first has to be loaded.
+Most scripts interact with the DOM in one way or another. For example, changing some text when the user clicks a button, or attaching click handlers. Before we can interact with the DOM, however, it has to be loaded.
 
 ```javascript
     document.addEventListener("DOMContentLoaded", function () {
@@ -53,11 +53,11 @@ There are a couple ways of referencing an element, one of which is `document.que
     });
 ```
 
-This selects the first element that has an id of 'button'. Referencing an element allows you to script the element within JS such as listening for events.
+This selects the first elements that has an id of ‘button’. Referencing an element allows you to script the element within JS, such as listening for events.
 
 ### 3. Attaching an event listener
 
-For the elements that you have references, you can attach an event listener and a handler using `element.addEventListener(eventName, callback)`
+For the elements that you have references for, you can attach an event listener and a handler, using `element.addEventListener(eventName, callback)`
 
 ```javascript/2,4/
     document.addEventListener("DOMContentLoaded", function () {
@@ -82,7 +82,7 @@ You can also change the text or HTML of an element with `element.innerHTML`
 ```
 
 
-### 5. adding/removing a class
+### 5. Adding or Removing a class
 
 use `element.classList.add()` and `element.classList.remove()` to add or remove classes respectively
 
@@ -98,4 +98,7 @@ use `element.classList.add()` and `element.classList.remove()` to add or remove 
 
 
 ## That's it!
-there's a lot more to vanilla JS but these 5 steps will get you started with your interactive web app without react.
+There’s a lot more to vanilla JS, but these 5 steps will get you started with your interactive Web app, without using React.
+
+
+Special thanks to [Chris Park](https://www.linkedin.com/in/christopher-park-863807132/) for editing this article.
