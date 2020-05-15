@@ -1,6 +1,6 @@
 ---
-title: Build Your Own Record Player Vanilla JS
-description: Build your own Vanilla JS record player
+title: Build Your Own Record Player With Vanilla JS
+description: Listening to music is always fun, but you know whats more fun than listening ? Thats right! Building your own Vanilla JS record player.
 date: 2020-05-15
 tags:
   - vanilla js
